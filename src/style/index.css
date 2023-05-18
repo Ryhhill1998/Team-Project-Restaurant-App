@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* -------------------- CSS VARIABLES -------------------- */
+:root {
+    --primary-theme: #F49D1A;
+    --primary-theme-rgba: 194, 59, 34;
+    --secondary-theme: #F49D1A;
+    --secondary-theme-rgba: 244, 157, 26;
+    --background-theme: #f1f0f0;
+    --dark-theme: #4c4c4c;
+    --dark-theme-contrast: #656565;
+
+    --font-size-heading: 1rem;
+    --font-size-sub-heading: 0.9rem;
+    --font-size-nav-button: 0.85rem;
+    --font-size-smaller: 0.8rem;
+    --font-size-small: 0.75rem;
+    --font-size-icon-large: 1.3rem;
+    --font-size-icon-small: 1rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold-1: 500;
+    --font-weight-bold-2: 600;
+    --font-weight-bold-3: 700;
+
+    --border: solid 1px black;
+    --border-radius: 8px;
+
+    --box-shadow: 0 4px 4px rgba(32, 30, 30, 0.25);
+
+    --max-width-content: 500px;
+
+    --margin-align-center: 0 auto;
+
+    --padding-content: 0.75em 1em;
+}
+
+/* -------------------- GLOBAL STYLES -------------------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--font-weight-regular);
+}
+
+body {
+    background-color: var(--background-theme);
+}
+
+.icon {
+    color: var(--secondary-theme);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width-content);
+    margin: var(--margin-align-center);
+    padding: var(--padding-content);
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 0.9rem;
+    }
+}

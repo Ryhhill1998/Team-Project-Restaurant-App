@@ -1,0 +1,92 @@
+/* Styles for ShareButton component */
+.share-popup {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: white;
+    padding: 0.5em 1em 1em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border-bottom: solid 6px var(--primary-theme);
+}
+
+.share-popup h3 {
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px lightgrey;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-popup h3 button {
+    background: none;
+    border: none;
+}
+
+.share-popup h3 button .icon {
+    color: var(--primary-theme);
+}
+
+.share-popup h3 p {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-1);
+}
+/* Styles for buttons */
+.share-popup .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+    padding-top: 1em;
+}
+
+.share-popup .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.share-popup .button-container a,
+.share-popup .button-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.share-popup .button-container a {
+    background-color: var(--primary-theme);
+}
+
+.share-popup .button-container button {
+    background-color: grey;
+}
+
+
+.share-popup .button-container button:hover {
+    background-color: lightgrey;
+}
+
+.share-popup .button-container a:hover {
+    background-color: var(--secondary-theme);
+}
+
+.share-popup .button-container a .icon,
+.share-popup .button-container button .icon {
+    width: 32px;
+    height: 32px;
+}
+
+.share-popup .button-container p {
+    font-size: 0.65rem;
+    font-weight: var(--font-weight-bold-1);
+}

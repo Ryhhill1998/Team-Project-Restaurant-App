@@ -1,0 +1,127 @@
+@import "react-calendar/dist/Calendar.css";
+/* stylesheet which builds upon React Calendar default styles */
+/* -------------------- GLOBAL STYLES -------------------- */
+.react-calendar {
+    width: 100%;
+    border: none;
+    position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px lightgrey;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+.react-calendar__navigation {
+    border-bottom: solid 1px lightgrey;
+}
+
+.react-calendar__navigation__label {
+    font-size: var(--font-size-heading);
+    color: var(--primary-theme);
+}
+
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+    color: var(--primary-theme);
+    font-size: 2rem;
+}
+
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+    background: none;
+}
+
+.react-calendar__navigation button:disabled {
+    background: none;
+}
+
+.react-calendar__navigation__next-button:disabled {
+    visibility: hidden;
+}
+
+.react-calendar__navigation__next2-button:disabled,
+.react-calendar__navigation__prev2-button:disabled {
+    display: none;
+}
+
+
+/* -------------------- TILE STYLES -------------------- */
+.react-calendar__tile:not(.react-calendar__navigation__label) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    border-color: var(--background-theme);
+}
+
+.react-calendar__tile abbr {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-theme);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-weight: var(--font-weight-bold-1);
+    text-decoration: none;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+    font-weight: var(--font-weight-bold-1);
+    text-decoration: none;
+}
+
+.react-calendar__viewContainer {
+    padding: 0 0.5em 0.5em;
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+    background: none;
+    color: var(--primary-theme);
+}
+
+.react-calendar__tile--active abbr {
+    color: white;
+    background-color: var(--primary-theme);
+}
+
+
+.react-calendar__tile:hover, .react-calendar__tile:focus {
+    background-color: inherit;
+}
+
+.react-calendar__tile:disabled {
+    visibility: hidden;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: black;
+}
+
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: none;
+}
+
+.react-calendar__tile--now {
+    background: none;
+}
+
+.react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus {
+    background: none;
+}
+
+
+/* -------------------- RESTAURANT PHOTO -------------------- */
+.react-calendar__tile img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* -------------------- NEIGHBORING MONTH DATES -------------------- */
+.react-calendar__month-view__days__day--neighboringMonth {
+    opacity: 0.3;
+
+}

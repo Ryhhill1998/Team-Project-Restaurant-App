@@ -1,0 +1,11 @@
+/* add specific styles to default button component */
+.primary.default-button {
+    background-color: var(--primary-theme);
+    border: solid 2px var(--primary-theme);
+    color: white;
+}
+
+/* add specific styles to default button component icon */
+.primary.default-button .icon {
+    color: white;
+}

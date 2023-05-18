@@ -1,0 +1,125 @@
+/* Styles for SignInPage component */
+/* container */
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5em;
+    max-width: var(--max-width-content);
+    margin: var(--margin-align-center);
+}
+
+.signin-container h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-1);
+    color: black;
+    margin-bottom: 1.5rem;
+}
+/* form styling */
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.signin-error-message {
+    color: red;
+    margin: var(--margin-align-center);
+    text-align: center;
+}
+/* ButtonView styling */
+.signin-button {
+    background-color: var(--secondary-theme);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.signin-button:hover {
+    background-color: var(--secondary-theme);
+}
+
+.signin-page-signup {
+    margin: var(--margin-align-center);
+    padding: var(--padding-content);
+}
+/* signup link styling*/
+.signup-link {
+    text-decoration: none;
+    color: var(--primary-theme);
+}
+
+.signup-link:hover {
+    color: grey;
+}
+
+.signin-page-separator {
+    margin: var(--margin-align-center);
+    padding: 0.5rem;
+}
+
+.signin-page-separator span {
+    font-weight: var(--font-weight-bold-2);
+    color: rgba(128, 128, 128, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+/* Google and Facebook sign in buttons */
+.signin-google, .signin-facebook {
+    margin: var(--margin-align-center);
+    padding: var(--padding-content);
+    text-align: center;
+}
+
+.signin-google .icon {
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+    color: white;
+}
+
+.auth-button-google, .auth-button-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    width: 240px;
+    height: 5rem;
+    padding: var(--padding-content);
+    text-align: left;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.auth-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.auth-button-google {
+    background-color: #4285F4;
+    color: #fff;
+}
+
+.auth-button-google:hover {
+    background-color: #357AE8;
+    transform: scale(1.05);
+}
+
+.auth-button-facebook {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.auth-button-facebook:hover {
+    background-color: #2D4373;
+    transform: scale(1.05);
+}

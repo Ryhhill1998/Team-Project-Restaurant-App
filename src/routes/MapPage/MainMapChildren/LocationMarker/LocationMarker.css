@@ -1,0 +1,14 @@
+/* Styles for LocationMarker component */
+.location-marker-container {
+    border-radius: 50%;
+    border: solid 3px #F6F1F1;
+    display: flex;
+    box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 0.7);
+}
+
+.location-marker-container .icon {
+    color: #F6F1F1;
+    background-color: var(--primary-theme);
+    padding: 0.5em;
+    border-radius: 50%;
+}

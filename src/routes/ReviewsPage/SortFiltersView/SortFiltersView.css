@@ -1,0 +1,36 @@
+/* Styles for SortFiltersView component */
+/* container */
+.sort-filters-view {
+    position: absolute;
+    z-index: 10000;
+    top: 4em;
+    left: 0;
+    right: 0;
+    margin: var(--margin-align-center);
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+/* button*/
+.sort-filters-view button {
+    border: none;
+    background: none;
+    text-align: left;
+    padding: 0.5em 0.75em;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    color: black;
+}
+
+.sort-filters-view button.active {
+    background: var(--primary-theme);
+    color: white;
+}
+
+.sort-filters-view button:hover:not(.active) {
+    background: var(--background-theme);
+}

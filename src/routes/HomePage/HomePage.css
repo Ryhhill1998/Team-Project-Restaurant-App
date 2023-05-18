@@ -1,0 +1,6 @@
+/* Styles for the HomePage component */
+.home .restaurant-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

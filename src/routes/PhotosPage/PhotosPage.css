@@ -1,0 +1,6 @@
+/* Styles for PhotosPage component */
+.photos-page-container main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}

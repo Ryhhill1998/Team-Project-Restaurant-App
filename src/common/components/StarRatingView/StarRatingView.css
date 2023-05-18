@@ -1,0 +1,18 @@
+/* rating container */
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-sub-heading);
+}
+
+/* star icon */
+.star-rating .icon {
+    color: #F49D1A;
+    margin-right: 0.1em;
+}
+
+/* rating as number */
+.star-rating span {
+    margin-left: 0.25em;
+    font-weight: var(--font-weight-bold-1);
+}

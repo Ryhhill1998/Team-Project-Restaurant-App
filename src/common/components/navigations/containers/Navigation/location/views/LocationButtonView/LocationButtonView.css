@@ -1,0 +1,28 @@
+/* styles for location button */
+.navigation .lower .location-button {
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--dark-theme-contrast);
+    padding: 0.5em 0.75em;
+    font-size: var(--font-size-smaller);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* styles for location description text inside location button */
+.navigation .lower .location-button span {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/* styles for icon inside location button */
+.navigation .lower .location-button .icon {
+    margin-right: 0.5em;
+    font-size: var(--font-size-icon-small);
+}

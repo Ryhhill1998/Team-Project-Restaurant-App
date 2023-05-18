@@ -1,0 +1,39 @@
+/* styles for feedback container */
+.no-matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(100% + 0.5em);
+    left: 0;
+    width: 100%;
+    padding: var(--padding-content);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: var(--border-radius);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+/* styles for message inside message container - prevents blocking another element */
+.no-matches-message,
+.try-something-else-message {
+    pointer-events: none;
+}
+
+/* styles for message container */
+.no-matches-message {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-theme);
+}
+
+/* styles for message inside message container */
+.try-something-else-message {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    color: grey;
+}

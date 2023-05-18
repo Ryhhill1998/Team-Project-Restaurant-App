@@ -1,0 +1,13 @@
+/* Stylesheet for Interaction component*/
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold-1);
+}
+
+.interaction-container .icon {
+    color: black;
+    font-size: var(--font-size-icon-large);
+}

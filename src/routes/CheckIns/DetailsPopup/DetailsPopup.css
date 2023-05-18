@@ -1,0 +1,56 @@
+/* stlying for DetailsPopup component */
+.details-popup {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: var(--border-radius);
+}
+
+.details-popup > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.details-popup.visible {
+    opacity: 1;
+}
+
+/* styling for when the popup is expanded */
+.details-popup.expanded {
+    position: fixed;
+    border: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.details-popup-content {
+    width: 100%;
+    position: absolute;
+    top: 2em;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: var(--padding-content);
+}
+
+.details-popup-content .check-ins-card:not(:last-child) {
+    border-bottom: solid 2px lightgrey;
+}

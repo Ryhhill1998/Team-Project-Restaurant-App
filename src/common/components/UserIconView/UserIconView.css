@@ -1,0 +1,25 @@
+/* styles for user icon container */
+.user-icon {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: grey;
+    border: solid lightgrey;
+}
+
+/* styles for img if present */
+.user-icon img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* styles for default icon if present */
+.user-icon .icon {
+    height: 50%;
+    width: 50%;
+    color: lightgrey;
+}

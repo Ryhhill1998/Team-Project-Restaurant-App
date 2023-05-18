@@ -1,0 +1,7 @@
+/* Styles for PreviewReviews component */
+.preview-reviews-page-container,
+.preview-reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

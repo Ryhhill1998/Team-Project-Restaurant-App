@@ -1,0 +1,93 @@
+/* Styles for FriendsProfile component */
+.friends-profile-page-container main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.friends-profile-page-container .friends-profile-info-container p {
+    text-align: center;
+    font-weight: var(--font-weight-bold-1);
+}
+
+.friends-profile-page-container .friends-profile-info-container .copy-id-button {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em auto 0;
+    background-color: var(--secondary-theme);
+    padding: 0.5em 0.75em;
+    border-radius: var(--border-radius);
+}
+
+.friends-profile-page-container .friends-profile-info-container .copy-id-button .icon {
+    color: white;
+}
+
+.friends-profile-page-container .friends-profile-info-container .user-icon-container {
+    margin: 0 auto 0.5em;
+    width: fit-content;
+}
+
+.friends-profile-page-container .contributions-container {
+    display: flex;
+    gap: 1em;
+}
+
+.friends-profile-page-container .contributions-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+    color: black;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold-1);
+    font-size: var(--font-size-sub-heading);
+    background-color: white;
+    width: 100%;
+    padding: 1em 0.5em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.friends-profile-page-container .contributions-container button {
+    background-color: var(--primary-theme);
+    color: white;
+}
+
+.friends-profile-page-container .contributions-container a .icon {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.friends-profile-page-container .contributions-container button .icon {
+    color: white;
+}
+
+.friends-profile-page-container .options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-profile-page-container .options-container a:not(:last-child) {
+    border-bottom: solid 1px grey;
+}
+
+.friends-profile-page-container .options-container a {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: var(--font-weight-bold-1);
+    padding: 1em 0;
+}
+
+.friends-profile-page-container .options-container a .icon {
+    color: black;
+    margin-right: 0.5em;
+    width: 20px;
+}
+
+
+

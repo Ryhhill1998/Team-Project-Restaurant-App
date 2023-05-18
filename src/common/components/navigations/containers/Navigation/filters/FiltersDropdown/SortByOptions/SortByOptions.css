@@ -1,0 +1,12 @@
+/* styles for sort buttons container */
+.sort-buttons-container {
+    display: flex;
+    border: solid 1px lightgrey;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* styles for first and second buttons */
+.sort-buttons-container button:not(:last-child) {
+    border-right: solid 1px lightgrey;
+}

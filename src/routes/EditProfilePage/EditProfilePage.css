@@ -1,0 +1,49 @@
+/* Styles for EditProfilePage */
+.profile-container section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* CHANGE ICON */
+.profile-container .change-icon-section {
+    align-items: center;
+    position: relative;
+    margin-top: 1em;
+}
+
+.profile-container .change-icon-section > .user-icon-container {
+    position: relative;
+}
+
+.profile-container .change-icon-section .user-icon-container > button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid 2px lightgrey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+.profile-container .change-icon-section .user-icon-container > button .icon {
+    color: black;
+}
+
+/* CHANGE DETAILS */
+.profile-container .change-details-section {
+    border-radius: var(--border-radius);
+    margin-top: 2em;
+    position: relative;
+}
+
+.profile-container .change-details-section .form-field {
+    font-weight: var(--font-weight-bold-2);
+    font-size: var(--font-size-sub-heading);
+}
+
+.profile-container .error-message {
+    color: red;
+}

@@ -1,0 +1,69 @@
+/* Styling for SignUpPage component */
+/* container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    max-width: var(--max-width-content);
+    margin: var(--margin-align-center);
+}
+
+.signup-container h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-1);
+    color: var(--primary-theme);
+    margin-bottom: 1.5rem;
+}
+/* form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+}
+
+.form-field input.error-border {
+    border: red 2px solid;
+    background-color: rgba(255, 153, 153, 0.2);
+}
+
+.form-field input.success-border {
+  border: 2px solid green;
+  background-color: rgba(153, 255, 153, 0.2);
+}
+
+.signup-container .error-message {
+    color: red;
+    margin: var(--margin-align-center);
+    text-align: center;
+}
+/* button styling */
+.signup-button {
+    background-color: var(--secondary-theme);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-button:hover {
+    background-color: var(--primary-theme);
+}
+
+.signup-page-signin {
+    margin: var(--margin-align-center);
+    padding: var(--padding-content);
+}
+/* signin link styling*/
+.signin-link {
+    text-decoration: none;
+    color: var(--primary-theme);
+}
+
+.signin-link:hover {
+    color: grey;
+}

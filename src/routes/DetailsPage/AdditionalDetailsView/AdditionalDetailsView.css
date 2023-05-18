@@ -1,0 +1,21 @@
+/* Styles for AdditionalDetailsView component */
+.additional-details-view {
+    text-align: left;
+}
+
+.additional-details-view > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.additional-details-view span {
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-2);
+    padding: 0 0.5rem;
+}
+
+.additional-details-view p {
+    padding: 0.25rem 1.75rem;
+    font-size: var(--font-size-sub-heading);
+}

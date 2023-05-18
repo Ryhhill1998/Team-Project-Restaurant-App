@@ -1,0 +1,57 @@
+/* styles for restaurant marker */
+.restaurant-marker-container .marker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 5px white;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+/* styles for image used in marker */
+.restaurant-marker-container .marker img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 5;
+    position: relative;
+}
+
+/* styles for triangle below markers to make a point to location */
+.restaurant-marker-container .triangle::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: white;
+    bottom: -2px;
+    left: 42%;
+    transform: rotate(45deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
+    z-index: 0;
+    border-radius: 2px;
+}
+
+/* styles for selected marker on map page */
+.restaurant-marker-container.selected:not(.check-in) .marker {
+    height: 85px;
+    width: 85px;
+}
+
+/* styles for selected marker triangle on map page */
+.restaurant-marker-container.selected:not(.check-in) .triangle::after {
+    left: 44.8%;
+}
+
+/* styles for selected marker on check ins page */
+.restaurant-marker-container.selected.check-in .marker {
+    height: 65px;
+    width: 65px;
+}
+
+/* styles for selected marker triangle on check ins page */
+.restaurant-marker-container.selected.check-in .triangle::after {
+    left: 43.8%;
+}

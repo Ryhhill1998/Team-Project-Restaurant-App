@@ -1,0 +1,15 @@
+/* default button style */
+.default-button {
+    margin: var(--margin-align-center);
+    padding: 0.5em;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-bold-1);
+    font-size: var(--font-size-heading);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+    white-space: nowrap;
+}

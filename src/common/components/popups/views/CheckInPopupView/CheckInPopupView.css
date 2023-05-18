@@ -1,0 +1,168 @@
+/* styles for check in popup container */
+.confirm-checkin-popup {
+    background-color: white;
+    position: fixed;
+    color: black;
+    z-index: 20000;
+    top: 4em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 250px;
+    padding: 0.75em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border: solid 1px lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* styles for date input container */
+.confirm-checkin-popup .date-container {
+    background-color: var(--background-theme);
+    padding: 0.5em;
+    border-radius: var(--border-radius);
+}
+
+/* styles for add friend button */
+.confirm-checkin-popup .add-friend-button {
+    background-color: var(--secondary-theme);
+    border-radius: var(--border-radius);
+    color: white;
+    border: none;
+    margin: var(--margin-align-center);
+    padding: 0.5em 0.75em;
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-weight-bold-1);
+    white-space: nowrap;
+}
+
+/* styles for plus icon inside add friends button*/
+.confirm-checkin-popup .add-friend-button .icon {
+    color: white;
+}
+
+/* styles for when add friend button is hovered over */
+.confirm-checkin-popup .add-friend-button:hover {
+    background-color: var(--primary-theme);
+}
+
+/* styles for select friends dropdown */
+.confirm-checkin-popup .select-friends {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    border: solid 1px lightgrey;
+    margin-bottom: 0.5em;
+    max-height: 110px;
+    overflow: scroll;
+}
+
+/* styles for select friend card inside friends dropdown */
+.confirm-checkin-popup .select-friends .select-friend-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+/* styles for div inside select friend card */
+.confirm-checkin-popup .select-friends .select-friend-card > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+/* styles for icon inside select friend card */
+.confirm-checkin-popup .select-friends .select-friend-card .icon {
+    font-size: 1rem;
+}
+
+/* styles for all friend cards except last */
+.confirm-checkin-popup .select-friends .select-friend-card:not(:last-child) {
+    border-bottom: solid 1px lightgrey;
+}
+
+/* styles for icon container inside friend card */
+.confirm-checkin-popup .select-friends .select-friend-card .icon-container {
+    position: relative;
+}
+
+/* styles for icon inside icon container inside friend card */
+.confirm-checkin-popup .select-friends .select-friend-card .icon-container > .icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    color: grey;
+}
+
+/* styles for paragraph tag inside friend card */
+.confirm-checkin-popup .select-friends .select-friend-card p {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold-1);
+}
+
+/* styles for friend selected count feedback */
+.confirm-checkin-popup .friends-selected-count {
+    font-size: var(--font-size-small);
+    margin: -0.5em 0 0.5em;
+}
+
+/* feedback colour */
+.confirm-checkin-popup .feedback {
+    color: red;
+}
+
+/* makes 'check-in' bold */
+.confirm-checkin-popup p span {
+    font-weight: var(--font-weight-bold-2);
+}
+
+/* styles for buttons container */
+.confirm-checkin-popup .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+/* styles for buttons container first button */
+.confirm-checkin-popup .buttons-container button:first-child {
+    background-color: var(--primary-theme);
+    color: white;
+}
+
+/* styles for buttons container second button */
+.confirm-checkin-popup .buttons-container button:nth-child(2) {
+    background-color: white;
+    color: var(--primary-theme);
+}
+
+/* styles for buttons container button once hovered */
+.confirm-checkin-popup .buttons-container button:hover {
+    background-color: var(--secondary-theme);
+    border-color: var(--secondary-theme);
+    color: white;
+}
+
+/* generic styles for buttons container button */
+.confirm-checkin-popup .buttons-container button {
+    border: solid 2px var(--primary-theme);
+    border-radius: var(--border-radius);
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 0.35em 0;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+}

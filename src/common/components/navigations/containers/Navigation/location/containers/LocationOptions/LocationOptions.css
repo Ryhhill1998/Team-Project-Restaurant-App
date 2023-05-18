@@ -1,0 +1,71 @@
+/* styles for options container */
+.location-options-container {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+/* styles for options */
+.location-options {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* styles for use current location button */
+.location-options .use-geolocation-button {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 10px 8px;
+    font-size: var(--font-size-smaller);
+    text-align: left;
+    color: grey;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-bold-1);
+}
+
+/* styles for use current location button icon */
+.location-options .use-geolocation-button .icon {
+    color: grey;
+}
+
+/* generic styles for all buttons in component */
+.location-options .icon {
+    margin-right: 0.4em;
+    font-size: var(--font-size-icon-small);
+}
+
+/* styles for postcode input container */
+.location-options .postcode-input-container {
+    border: solid 1px lightgrey;
+    border-left: none;
+    border-right: none;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* styles for postcode input */
+.location-options .postcode-input-container input {
+    border: none;
+    width: 100%;
+    font-size: var(--font-size-smaller);
+    color: var(--secondary-theme);
+    font-weight: var(--font-weight-bold-1);
+}
+/* styles for postcode input when focused */
+.location-options .postcode-input-container input:focus {
+    outline: none;
+}
+
+/* styles for postcode input placeholder */
+.location-options .postcode-input-container input::placeholder {
+    font-size: var(--font-size-smaller);
+    color: var(--secondary-theme);
+    font-weight: var(--font-weight-bold-1);
+}

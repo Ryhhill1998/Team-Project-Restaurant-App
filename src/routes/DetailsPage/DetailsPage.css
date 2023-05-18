@@ -1,0 +1,164 @@
+/* DetailsPage CSS */
+
+/* Styles for the main container */
+.details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+/* Styles for the restaurant info container */
+.details-page .image-and-info-container .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.details-page .image-and-info-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.details-page .image-and-info-container .restaurant-info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    color: white;
+}
+
+.details-page .image-and-info-container .restaurant-info .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.details-page .image-and-info-container .restaurant-info .title-container h1 {
+    color: white;
+}
+/* Styles for the main heading */
+.details-page h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-2);
+}
+
+.details-page .image-and-info-container .restaurant-info .info {
+    display: flex;
+    gap: 0.5em;
+}
+/* Styles for specific elements within the restaurant info container */
+.details-page .image-and-info-container .restaurant-info .address p,
+.details-page .image-and-info-container .restaurant-info .phone p,
+.details-page .image-and-info-container .restaurant-info .price p,
+.details-page .image-and-info-container .restaurant-info .open-status {
+    color: white;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-2);
+}
+/* Styles for the navigation container */
+.details-page-navigation {
+    display: flex;
+    position: sticky;
+    gap: 0.5em;
+    padding: 0.4em 0.75rem;
+    background-color: var(--dark-theme);
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    z-index: 100;
+    overflow: scroll;
+}
+
+.details-page-navigation button {
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: solid 3px rgba(255, 255, 255, 0);
+    font-weight: var(--font-weight-bold-1);
+    letter-spacing: 0.05rem;
+    font-size: var(--font-size-smaller);
+    padding: 0.25em 0;
+    width: 100%;
+    transition: all 0.25s ease-in;
+    white-space: nowrap;
+}
+
+.details-page-navigation button.active {
+    border-bottom-color: var(--primary-theme);
+    color: var(--primary-theme);
+    font-weight: var(--font-weight-bold-3);
+}
+/* Styles for the details container */
+.details-page .details-container {
+    padding: 1rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.details-page .details-container > section:not(:last-child) {
+    border-bottom: solid 2px lightgrey;
+    padding-bottom: 1rem;
+}
+
+.details-page .details-container h2 {
+    color: var(--primary-theme);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-2);
+    margin-bottom: 1em;
+}
+
+.details-page .details-container p {
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+}
+
+.details-page .details-container .website a {
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    margin: 0;
+}
+
+.details-page .details-container .website a,
+.details-page .details-container .website a .icon {
+    color: black;
+}
+
+.details-page .details-container .website a .icon {
+    margin-left: 0.25em;
+}
+
+.details-page .details-container .description .read-more-button {
+    border: none;
+    border-bottom: 2px solid var(--primary-theme);
+    background-color: transparent;
+    color: var(--primary-theme);
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    cursor: pointer;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    outline: none;
+}

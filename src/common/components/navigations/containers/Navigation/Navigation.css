@@ -1,0 +1,74 @@
+/* styles for container */
+.navigation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    background-color: var(--dark-theme);
+}
+
+/* styles for navigation div */
+.navigation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    max-width: var(--max-width-content);
+    padding: var(--padding-content);
+    margin: var(--margin-align-center);
+}
+
+/* styles for upper level of navigation */
+.navigation .upper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+/* styles for search and filters container */
+.navigation .upper .search-and-filters {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5em;
+}
+
+/* styles for cancel search button */
+.navigation .upper .search-and-filters .cancel {
+    background: none;
+    border: none;
+    color: var(--primary-theme);
+    font-size: var(--font-size-nav-button);
+    font-weight: var(--font-weight-bold-2);
+}
+
+/* styles for button components that are direct children of upper nav */
+.navigation .upper > .button {
+    background-color: var(--dark-theme-contrast);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-icon-small);
+    padding: 0 0.5em;
+    width: 35px;
+}
+
+/* styles for filter button */
+.navigation .upper .filter-button {
+    background: none;
+    border: none;
+    font-size: var(--font-size-icon-small);
+}
+
+/* styles for lower nav */
+.navigation .lower {
+    display: flex;
+    gap: 0.75em;
+}

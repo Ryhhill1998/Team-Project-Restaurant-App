@@ -1,0 +1,106 @@
+/* styles for navigation container */
+.profile-navigation {
+    background-color: var(--dark-theme);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* styles for all buttons */
+.profile-navigation button {
+    white-space: nowrap;
+}
+
+/* styles for direct div children of container */
+.profile-navigation > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* styles for upper nav */
+.profile-navigation .upper-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-theme);
+    gap: 0.5em;
+}
+
+/* styles for icons which are direct children of buttons which are direct children of upper nav */
+.profile-navigation .upper-nav > button > .icon {
+    color: var(--secondary-theme);
+    margin-right: 0.5em;
+}
+
+/* styles for page title */
+.profile-navigation .upper-nav h1 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-1);
+    color: white;
+    text-transform: capitalize;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+/* styles for all upper nav buttons */
+.profile-navigation .upper-nav > button {
+    color: var(--secondary-theme);
+    font-weight: var(--font-weight-bold-2);
+    font-size: var(--font-size-nav-button);
+    background: none;
+    border: none;
+}
+
+/* styles for lower nav */
+.profile-navigation .lower-nav {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+
+/* styles for all lower nav icons */
+.profile-navigation .lower-nav .icon {
+    color: white;
+}
+
+/* styles for buttons container in lower nav */
+.profile-navigation .lower-nav .buttons-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+/* styles for all buttons in lower nav */
+.profile-navigation .lower-nav button {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5em 0.75em;
+    font-size: var(--font-size-smaller);
+    background-color: var(--dark-theme-contrast);
+    color: white;
+    display: flex;
+    font-weight: var(--font-weight-bold-1);
+    align-items: center;
+    gap: 0.25em;
+}
+
+/* styles for display counter */
+.profile-navigation .lower-nav .toggle-display-button .count {
+    background-color: var(--dark-theme);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold-1);
+}

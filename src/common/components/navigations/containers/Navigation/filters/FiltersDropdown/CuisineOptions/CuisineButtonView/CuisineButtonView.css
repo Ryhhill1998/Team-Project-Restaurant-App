@@ -1,0 +1,46 @@
+/* styles for cuisine option button container */
+.cuisine-option {
+    border: solid 1px lightgrey;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+/* styles for Any button */
+#Any-option {
+    justify-content: center;
+}
+
+/* styles for selected cuisine option */
+.cuisine-option.selected {
+    background-color: rgba(244, 157, 26, 0.2);
+}
+
+/* styles for selected cuisine option name */
+.cuisine-option.selected .icon, .cuisine-option.selected .cuisine-option-name {
+    color: #F49D1A;
+}
+
+/* general styles for cuisine option name */
+.cuisine-option-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: grey;
+}
+
+/* general styles for cuisine option icon - fontawesome */
+.cuisine-option .icon {
+    color: grey;
+}
+
+/* general styles for cuisine option icon - img and fontawesome */
+.cuisine-option .cuisine-icon {
+    width: 20px;
+}

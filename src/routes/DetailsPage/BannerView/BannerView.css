@@ -1,0 +1,57 @@
+/* Styles for the banner view component */
+.banner {
+    top: 0;
+    z-index: 100;
+    padding: 0.75rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75em;
+}
+/* stles for heading */
+.banner h1 {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    width: 100%;
+    transition: all 0.25s ease;
+}
+/* stles for button */
+.banner .back-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-2);
+    cursor: pointer;
+    color: white;
+}
+
+.banner .back-button .icon {
+    margin-right: 0.25em;
+}
+
+.banner .icon {
+    color: white;
+    font-size: var(--font-size-icon-large);
+}
+
+.banner .action-button-container {
+    display: flex;
+    gap: 0.75em;
+    justify-content: flex-end;
+}
+
+.banner .action-button-container > button {
+    background: none;
+    border: none;
+}

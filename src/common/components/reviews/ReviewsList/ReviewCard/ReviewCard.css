@@ -1,0 +1,139 @@
+/* review card */
+.review-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* header including author info and edit/delete buttons */
+.review-card .review-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    border-bottom: solid 1px lightgrey;
+    background-color: var(--dark-theme-contrast);
+    padding: 1rem;
+}
+
+/* author details */
+.review-card .review-header .author-details {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    color: white;
+}
+
+/* author display name */
+.review-card .review-header .author-details div .display-name {
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-weight-bold-1);
+    margin-bottom: 0.25em;
+}
+
+/* number of reviews p tag */
+.review-card .review-header .author-details div p:nth-child(2) {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+}
+
+/* delete/edit button icons */
+.review-card .review-header .buttons-container button .icon {
+    font-size: 1rem;
+    color: lightgrey;
+}
+
+/* review title */
+.review-card h3 {
+    text-align: left;
+    color: var(--dark-theme);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-2);
+    margin-bottom: 0.25em;
+    text-transform: capitalize;
+}
+
+/* review content */
+.review-card .review-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* rating and date of visit container */
+.review-card .rating-and-date-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* visit date */
+.review-card .rating-and-date-container p {
+    font-size: var(--font-size-smaller);
+    font-weight: normal;
+    text-align: right;
+}
+
+/* make 'visit date:' bold */
+.review-card .rating-and-date-container p strong {
+    font-weight: var(--font-weight-bold-1);
+}
+
+/* all paragraph tags */
+.review-card p {
+    text-align: left;
+    font-size: var(--font-size-sub-heading);
+    line-height: 1.5;
+}
+
+/* show photos button - if photos exist for review */
+.review-card .show-photos-button {
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/* review photos */
+.review-card .review-photos {
+    display: flex;
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden;
+}
+
+/* visible of review photos */
+.review-card .review-photos.visible {
+    opacity: 1;
+}
+
+/* full screen img container */
+.review-card .full-screen-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+/* full screen img */
+.review-card .full-screen-photo img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* all buttons in buttons container */
+.review-card .review-content .buttons-container button {
+    font-size: 1.2rem;
+}
+
+/* downvote button flipped to show as downvote */
+.review-card .review-content .buttons-container button:nth-child(3) {
+    transform: rotate(180deg);
+}

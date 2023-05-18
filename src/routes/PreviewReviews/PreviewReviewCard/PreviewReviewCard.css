@@ -1,0 +1,74 @@
+/* Styles for PreviewReviewCard component */
+/* container */
+.preview-review-card {
+    padding: 0.75em;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: relative;
+}
+
+.preview-review-card .container-lhs {
+    display: flex;
+    gap: 1em;
+}
+
+.preview-review-card .container-lhs {
+    display: flex;
+    gap: 1em;
+    width: 85%;
+}
+
+.preview-review-card .container-lhs > div:first-child {
+    flex-shrink: 0;
+}
+
+.preview-review-card .container-lhs .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5em;
+    width: 60%;
+    overflow: hidden;
+}
+/* text styling */
+.preview-review-card .container-lhs .preview p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: var(--font-size-sub-heading);
+}
+
+.preview-review-card h3 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-1);
+    margin-bottom: 0.25em;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.preview-review-card .container-rhs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+/* button styling */
+.preview-review-card button {
+    background: none;
+    border: none;
+}
+
+.preview-review-card button .icon {
+    color: var(--dark-theme-contrast);
+    font-size: 1.25rem;
+}

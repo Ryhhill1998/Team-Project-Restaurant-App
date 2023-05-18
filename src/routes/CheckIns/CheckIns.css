@@ -1,0 +1,122 @@
+/* CheckIns page styling */
+.check-ins-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-width-content);
+    margin: var(--margin-align-center);
+    padding: var(--padding-content);
+    position: relative;
+}
+
+/* Calendar styling */
+button.react-calendar__tile {
+    padding: 0;
+    position: relative;
+    height: 50px;
+    width: 100px;
+}
+
+button.react-calendar__tile > abbr {
+    position: absolute;
+}
+
+button.react-calendar__tile > div {
+    width: 100%;
+    height: 100%;
+}
+/* CheckIns page header styling */
+.check-ins-page-container header button {
+    background: none;
+    border: none;
+}
+
+.check-ins-page-container header {
+    background-color: var(--dark-theme);
+}
+
+.check-ins-page-container header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-ins-page-container header h1 {
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold-1);
+    color: white;
+}
+
+.check-ins-page-container header button {
+    color: var(--secondary-theme);
+    font-weight: var(--font-weight-bold-2);
+    font-size: var(--font-size-smaller);
+}
+
+.check-ins-page-container header button .icon {
+    margin-right: 0.5em;
+}
+/* CheckIns page main styling */
+.check-ins-page-container main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.check-ins-map-container {
+    overflow: hidden;
+    border: solid 1px lightgrey;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 260px;
+}
+/* CheckIns stats styling */
+.check-ins-stats {
+    display: flex;
+    width: 100%;
+}
+
+.check-ins-unique-restaurants,
+.check-ins-total {
+    flex: 1;
+    padding: var(--padding-content);
+    margin: 1em 1em;
+    border: solid 1px lightgrey;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px lightgrey;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: white;
+}
+
+.check-ins-unique-restaurants .icon-container,
+.check-ins-total .icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.check-ins-total .icon, .check-ins-unique-restaurants .icon {
+    color: var(--primary-theme);
+}
+
+.check-ins-unique-restaurants span,
+.check-ins-total span {
+    font-weight: var(--font-weight-bold-2);
+    padding-left: 0.5rem;
+}
+
+.check-ins-unique-restaurants p,
+.check-ins-total p {
+    font-size: var(--font-size-smaller);
+    color: grey;
+    padding-left: 1.5rem;
+}
+
+.check-ins-calendar {
+    position: relative;
+}
+/* CheckIns page NoResultsView component container styling */
+.check-ins-map-container .no-results {
+    background-color: white;
+}

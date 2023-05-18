@@ -1,0 +1,82 @@
+/* Styles for ProfilePage component */
+/* container */
+.profile-page-container main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.profile-page-container .profile-info-container {
+    margin-top: 1em;
+}
+
+.profile-page-container .profile-info-container p {
+    text-align: center;
+    font-weight: var(--font-weight-bold-1);
+}
+
+.profile-page-container .profile-info-container .copy-id-button {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em auto 0;
+    background-color: var(--secondary-theme);
+    padding: 0.5em 0.75em;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.profile-page-container .profile-info-container .copy-id-button .icon {
+    color: white;
+}
+
+.profile-page-container .profile-info-container .user-icon-container {
+    width: fit-content;
+    margin: 0 auto 0.5em;
+}
+
+.profile-page-container .contributions-container {
+    display: flex;
+    gap: 1em;
+}
+
+.profile-page-container .options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-container .options-container a:not(:last-child) {
+    border-bottom: solid 1px grey;
+}
+
+.profile-page-container .options-container a {
+    text-align: left;
+    text-decoration: none;
+    color: var(--dark-theme);
+    font-weight: var(--font-weight-bold-1);
+    padding: 1em 0;
+}
+
+.profile-page-container .options-container a .icon {
+    color: var(--dark-theme);
+    margin-right: 0.5em;
+    width: 20px;
+}
+
+.profile-page-container .sign-out-button {
+    background-color: var(--primary-theme);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold-1);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.profile-page-container .sign-out-button:hover {
+    background-color: var(--secondary-theme);
+}

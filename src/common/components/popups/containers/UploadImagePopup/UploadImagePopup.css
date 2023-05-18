@@ -1,0 +1,83 @@
+/* styles for popup container */
+.uploaded-image-popup {
+    border-radius: var(--border-radius);
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    z-index: 15000;
+    background-color: white;
+    padding: 0.75em;
+    width: 95%;
+    max-width: 275px;
+    margin: var(--margin-align-center);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* styles for popup header */
+.uploaded-image-popup .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* styles for popup button in header */
+.uploaded-image-popup .popup-header button {
+    background: none;
+    border: none;
+    color: var(--secondary-theme);
+    font-size: var(--font-size-sub-heading);
+}
+
+/* styles for title of popup */
+.uploaded-image-popup h3 {
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    text-align: center;
+    border-bottom: solid 1px var(--background-theme);
+    padding-bottom: 0.5em;
+    margin-top: -0.5em;
+}
+
+/* generic styles for container holding uploaded img */
+.uploaded-image-popup .uploaded-image-container {
+    border: solid 4px lightgrey;
+    margin: var(--margin-align-center);
+    margin-bottom: 1em;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for percent completion display */
+.uploaded-image-popup .uploaded-image-container .progress-display {
+    background-color: white;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    color: var(--primary-theme);
+    font-weight: var(--font-weight-bold-2);
+    position: absolute;
+}
+
+/* styles for rectangle img - all except profile */
+.uploaded-image-popup .uploaded-image-container.rectangle {
+    width: 180px;
+    height: 120px;
+}
+
+/* styles for circle img - only profile */
+.uploaded-image-popup .uploaded-image-container.round {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}

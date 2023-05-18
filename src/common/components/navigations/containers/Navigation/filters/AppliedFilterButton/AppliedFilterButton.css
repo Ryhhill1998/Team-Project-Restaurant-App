@@ -1,0 +1,28 @@
+/* styles for container */
+.filter-selected {
+    color: white;
+    font-weight: var(--font-weight-bold-1);
+    font-size: var(--font-size-smaller);
+    background-color: var(--primary-theme);
+    padding: 0.4em 0.75em;
+    border-radius: 8px;
+    border: solid 1px var(--primary-theme);
+    display: flex;
+    align-items: center;
+}
+
+/* styles for close button */
+.filter-selected .close-button {
+    background: none;
+    border: none;
+    line-height: var(--font-size-smaller);
+    padding: 0;
+    margin-right: 0.5em;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* styles for close button icon */
+.filter-selected .icon {
+    color: white;
+}

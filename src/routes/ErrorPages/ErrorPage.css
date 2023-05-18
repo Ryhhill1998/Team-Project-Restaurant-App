@@ -1,0 +1,73 @@
+/* ErrorPage.css */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3em;
+  }
+
+   .error-image {
+    width: 30%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .error-page-content {
+    text-align: center;
+    max-width: 500px;
+    padding: 1em;
+    color: #F49D1A; 
+    margin-top: 1em; 
+    margin-bottom: 3em; 
+  }
+
+ 
+  /* styles for erroc page content */
+  .error-page-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .error-page-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
+
+  
+  .error-page-content a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border: 2px solid #F49D1A;
+    border-radius: 8px;
+    background-color: white;;
+    color: #F49D1A;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .error-page-content a:hover {
+    color: white;
+    background-color: #F49D1A;
+  }
+
+  .error-description {
+    text-align: center;
+    max-width: 500px;
+    padding: 1em 1em 1em 0.25em;
+    color: #b5b5b5;
+    font-size: 1rem;
+    border-left: 3px solid #F49D1A; /* Add left border */
+  }
+
+  .error-description p {
+    font-weight: 300;
+  }
+
+  .error-description b {
+    font-weight: 700;
+  }
+  

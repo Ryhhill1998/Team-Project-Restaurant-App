@@ -1,0 +1,24 @@
+/* styles for the ClosedSign component */
+.closed-sign {
+    width: fit-content;
+    background-color: white;
+    padding: 0.75em 1em;
+    color: var(--primary-theme);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold-2);
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: solid 1px var(--background-theme);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* styles for icon */
+.closed-sign .icon {
+    color: var(--primary-theme);
+    margin-left: 0.25em;
+}

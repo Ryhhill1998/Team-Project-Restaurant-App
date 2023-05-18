@@ -1,0 +1,11 @@
+/* Styles for FriendsPage component */
+
+.friend-icon-container main .add-friend-popup {
+    position: absolute;
+}
+
+.friends-page-container .friend-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}

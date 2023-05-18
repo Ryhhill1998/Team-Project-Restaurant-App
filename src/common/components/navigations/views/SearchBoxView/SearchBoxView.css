@@ -1,0 +1,45 @@
+/* styles for search box container */
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+/* styles for input container */
+.search-box .input-container {
+    padding: 0.4em 0.75em;
+    border-radius: var(--border-radius);
+    background-color: #c0bfbf;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+}
+
+/* styles for icons inside input container */
+.search-box .input-container .icon {
+    color: var(--dark-theme);
+    font-size: var(--font-size-icon-small);
+}
+
+/* styles for input placeholder */
+.search-box .input-container input::placeholder {
+    font-size: var(--font-size-sub-heading);
+    font-style: italic;
+    color: var(--dark-theme);
+}
+
+/* hides placeholder when input is focused */
+.search-box .input-container input:focus::placeholder {
+    visibility: hidden;
+}
+
+/* styles for input where search query is typed */
+.search-box .input-container .search-input {
+    border: none;
+    outline: none;
+    font-size: var(--font-size-sub-heading);
+    background: none;
+    color: var(--dark-theme);
+    width: 100%;
+}
+

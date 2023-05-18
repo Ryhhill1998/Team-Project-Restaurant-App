@@ -1,0 +1,6 @@
+/* Styles for HoursSection component */
+.hours-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}

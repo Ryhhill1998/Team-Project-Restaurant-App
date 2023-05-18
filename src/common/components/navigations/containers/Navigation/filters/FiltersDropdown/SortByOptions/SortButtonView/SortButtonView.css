@@ -1,0 +1,27 @@
+/* styles for sort button */
+.sort-button {
+    flex-basis: 100%;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.3);
+    padding: 0.5em 0;
+    font-size: 0.75rem;
+    color: grey;
+    font-weight: 500;
+}
+
+/* styles for sort button icon */
+.sort-button .icon {
+    margin-right: 0.5em;
+    color: grey;
+}
+
+/* styles for selected sort button */
+.sort-button.selected {
+    background-color: rgba(244, 157, 26, 0.2);
+    color: #F49D1A;
+}
+
+/* styles for selected sort button icon */
+.sort-button.selected .icon {
+    color: #F49D1A;
+}

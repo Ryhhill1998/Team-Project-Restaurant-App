@@ -1,0 +1,73 @@
+/* styling for DetailsCard component */
+/* general styling */
+.check-ins-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    padding: var(--padding-content);
+    background-color: white;
+    position: relative;
+}
+
+.check-ins-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.check-ins-card .card-header .buttons-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.check-ins-card .card-header .interaction-button .icon {
+    color: var(--dark-theme-contrast);
+    font-size: var(--font-size-heading);
+}
+
+.check-ins-card .card-header h3 {
+    font: var(--font-size-heading);
+    font-weight: var(--font-weight-bold-2);
+}
+
+.check-ins-card .user-icons {
+    display: flex;
+    gap: 0.25em;
+}
+
+.check-ins-card .visit-date {
+    font-size: var(--font-size-sub-heading);
+    color: var(--dark-theme);
+}
+
+.check-ins-card .visit-date span {
+    font-weight: var(--font-weight-bold-1);
+    margin-left: 0.25em;
+}
+
+.check-ins-card .photo-previews-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.check-ins-card .photo-previews-container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+/* button styling */
+.check-ins-card .add-photo-button {
+    border: none;
+    background-color: lightgrey;
+}
+
+.check-ins-card .add-photo-button .icon {
+    color: white;
+    width: 30%;
+    height: 30%;
+}

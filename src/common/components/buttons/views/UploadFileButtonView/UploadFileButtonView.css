@@ -1,0 +1,19 @@
+/* styles for the input field */
+.file-upload-input {
+    border: none;
+    padding: 0;
+    font-size: var(--font-size-sub-heading);
+    width: 100%;
+}
+
+/* styles for the button on the input */
+.file-upload-input::file-selector-button {
+    background: none;
+    border: solid 2px var(--primary-theme);
+    color: var(--primary-theme);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+}

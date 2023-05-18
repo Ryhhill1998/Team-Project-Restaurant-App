@@ -1,0 +1,29 @@
+/* styles for popup container */
+.confirmation-popup {
+    background-color: white;
+    position: absolute;
+    z-index: 15000;
+    color: black;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 220px;
+    padding: 0.5em 0.75em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: solid 1px lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+}
+
+/* styles for buttons container */
+.confirmation-popup .buttons-container {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin-top: 0.5em;
+}

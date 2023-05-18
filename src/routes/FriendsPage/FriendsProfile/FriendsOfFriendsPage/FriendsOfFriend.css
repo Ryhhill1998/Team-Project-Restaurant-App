@@ -1,0 +1,52 @@
+/* Styles for FriendsOfFriendPage */
+.friends-of-friend-container main .links-container .display-button {
+    background-color: white;
+    color: var(--primary-theme);
+    border: none;
+    gap: 0.25em;
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    border-radius: var(--border-radius);
+    padding: 0.5em 0.75em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.friends-of-friend-container main .links-container .display-button .count {
+    background-color: var(--primary-theme);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold-1);
+}
+
+.friend-icon-container main .add-friend-popup {
+    position: absolute;
+}
+
+.friends-of-friend-container .links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.friends-of-friend-container .links-container > div {
+    display: flex;
+    gap: 0.5em;
+}
+
+.friends-of-friend-container .friend-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.friends-of-friend-container .friend-card .action-buttons button:nth-child(2) {
+    display: none;
+}

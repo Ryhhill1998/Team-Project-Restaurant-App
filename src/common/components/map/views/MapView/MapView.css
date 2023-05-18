@@ -1,0 +1,27 @@
+/* hide all map controllers and attributes that do not involve map expansion */
+.mapboxgl-ctrl-attrib-inner, .mapboxgl-control-container > *:not(.mapboxgl-ctrl-bottom-right),
+.mapboxgl-ctrl-bottom-right > *:not(.mapboxgl-ctrl-group) {
+    display: none;
+}
+
+/* styles for the popups */
+.mapboxgl-popup-content {
+    box-shadow: 0.25em 0.25em 0.5em rgba(128, 128, 128, 0.35);
+    max-width: 150px;
+    padding: 0.75em;
+    border-radius: var(--border-radius);
+}
+
+/* styles for the custom content inside the popups */
+.mapboxgl-popup-content .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+/* styles for the icons inside the popups */
+.mapboxgl-popup-content p .icon {
+    margin-right: 0.5em;
+    color: #F49D1A;
+    font-size: var(--font-size-icon-small);
+}

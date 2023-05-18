@@ -1,0 +1,115 @@
+/* styles for container holding collage */
+.collage-container {
+    display: grid;
+    grid-gap: 0.75em;
+    width: 100%;
+    max-width: 500px;
+    margin: var(--margin-align-center);
+    height: 100%;
+    padding: var(--padding-content);
+}
+
+/* styles for all direct children of the container */
+.collage-container > * {
+    min-height: 120px;
+}
+
+/* styles for add photo button */
+.collage-container .add-photo-button {
+    border: none;
+    background-color: lightgrey;
+}
+
+/* styles for icon in add photo button */
+.collage-container .add-photo-button .icon {
+    color: white;
+    width: 30%;
+    height: 30%;
+}
+
+/* generic styles for select image button when in select mode */
+.collage-container .collage-image-wrapper .select-image-button {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 0.5em;
+    border-radius: 50%;
+    right: 0.5em;
+    background-color: rgba(128, 128, 128, 0.8);
+    border: solid 2px grey;
+    z-index: 1000;
+}
+
+/* generic styles for select image button icon when in select mode */
+.collage-container .collage-image-wrapper .select-image-button .icon {
+    color: rgba(211, 211, 211, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+/* styles for select image button when image selected in select mode */
+.collage-container .collage-image-wrapper .select-image-button.selected .icon {
+    color: var(--secondary-theme);
+}
+
+/* styles for select image button icon when image selected in select mode */
+.collage-container .collage-image-wrapper .select-image-button.selected {
+    background-color: white;
+    border-color: white;
+}
+
+/* styles for collage image wrapper when in select mode */
+.collage-container .collage-image-wrapper.clickable {
+    cursor: pointer;
+}
+
+/* styles for the header that appears when in select mode */
+.selection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+/* styles for the buttons inside the selection header */
+.selection-header .primary.default-button,
+.selection-header .inverse-primary.default-button {
+    width: fit-content;
+    margin: 0;
+}
+
+/* styles for the heading of the selection header which indicates the number of images selected */
+.selection-header h3 {
+    font-size: var(--font-size-sub-heading);
+    font-weight: var(--font-weight-bold-1);
+    text-align: center;
+}
+
+/* styles for the buttons container in the selection header */
+.selection-header .buttons-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+/* styles for the full screen image wrapper that appears when the image is in full screen mode */
+.collage-container .full-screen-image-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+/* styles for the img element when in full screen mode */
+.collage-container .full-screen-image-wrapper img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+  
